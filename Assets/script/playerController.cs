@@ -29,10 +29,7 @@ public class playerController : MonoBehaviour {
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertial = Input.GetAxis("Vertical");
-
-
         Vector3 movement = new Vector3(moveHorizontal, 0, moveVertial);
-
         rb.AddForce(movement * speed);
     }
 }
